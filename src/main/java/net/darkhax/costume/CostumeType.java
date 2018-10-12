@@ -1,5 +1,6 @@
 package net.darkhax.costume;
 
+import net.darkhax.bookshelf.lib.Constants;
 import net.minecraft.item.Item;
 
 public enum CostumeType {
@@ -25,5 +26,10 @@ public enum CostumeType {
     public String getName () {
         
         return this.name;
+    }
+    
+    public static CostumeType getRandom() {
+        
+        return CostumeType.values()[Constants.RANDOM.nextInt(CostumeType.values().length)];
     }
 }

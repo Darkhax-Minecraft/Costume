@@ -1,9 +1,11 @@
 #Misc
 itemGroup.costume=Costume
 entity.costume.living_costume.name=Living Costume
+costume.tooltip.open=Right click to open!
 
 #Items
 item.costume.costume.name=Costume
+item.costume.costume.bag.name=Costume Bag
 
 #Costumes
 costume.rainbow_sheep.name=Rainbow Sheep

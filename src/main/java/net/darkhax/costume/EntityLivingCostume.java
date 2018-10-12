@@ -56,7 +56,7 @@ public class EntityLivingCostume extends EntityMob {
         
         livingdata = super.onInitialSpawn(difficulty, livingdata);
         
-        final CostumeType costume = CostumeType.values()[Constants.RANDOM.nextInt(CostumeType.values().length)];
+        final CostumeType costume = CostumeType.getRandom();
         
         final Item[] items = costume.getCostumeItems();
         this.setItemStackToSlot(EntityEquipmentSlot.HEAD, new ItemStack(items[0]));
@@ -69,6 +69,6 @@ public class EntityLivingCostume extends EntityMob {
     @Override
     public ResourceLocation getLootTable () {
         
-        return null; // EerieEntities.LOOT_CURSED_ARMOR;
+        return Costume.LOOT_TABLE_COSTUME;
     }
 }

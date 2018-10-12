@@ -12,6 +12,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.Biome.SpawnListEntry;
 import net.minecraftforge.common.BiomeDictionary;
@@ -32,6 +33,8 @@ public class Costume {
     
     public static final LoggingHelper LOG = new LoggingHelper(NAME);
     public static final RegistryHelper REGISTRY = new RegistryHelper(MODID).setTab(new CreativeTabCostume()).enableAutoRegistration();
+    
+    public static final ResourceLocation LOOT_TABLE_COSTUME = REGISTRY.registerLootTable("entities/living_costume");
     
     @EventHandler
     public void onPreInit (FMLPreInitializationEvent event) {
@@ -57,6 +60,7 @@ public class Costume {
             }
         }
         
+        REGISTRY.registerItem(new ItemCostumeBag(), "costume_bag");
         REGISTRY.registerMob(EntityLivingCostume.class, "living_costume", 0, 0x7b68ee, 0xb0e0e6);
     }
     
