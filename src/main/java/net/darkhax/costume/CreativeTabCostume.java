@@ -38,7 +38,7 @@ public class CreativeTabCostume extends CreativeTabs {
     }
     
     @Override
-    public boolean hasSearchBar() {
+    public boolean hasSearchBar () {
         
         return true;
     }

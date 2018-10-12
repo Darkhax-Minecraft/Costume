@@ -26,7 +26,7 @@ public class EntityLivingCostume extends EntityMob {
     public EntityLivingCostume(World worldIn) {
         
         super(worldIn);
-        this.inventoryArmorDropChances = new float[] {0f, 0f, 0f, 0f};
+        this.inventoryArmorDropChances = new float[] { 0f, 0f, 0f, 0f };
         this.experienceValue = 5;
     }
     
@@ -43,7 +43,7 @@ public class EntityLivingCostume extends EntityMob {
     }
     
     @Override
-    protected void applyEntityAttributes() {
+    protected void applyEntityAttributes () {
         
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.23d);
@@ -69,6 +69,6 @@ public class EntityLivingCostume extends EntityMob {
     @Override
     public ResourceLocation getLootTable () {
         
-        return null; //EerieEntities.LOOT_CURSED_ARMOR;
+        return null; // EerieEntities.LOOT_CURSED_ARMOR;
     }
 }

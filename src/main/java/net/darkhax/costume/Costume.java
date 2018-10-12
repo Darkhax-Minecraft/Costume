@@ -77,7 +77,7 @@ public class Costume {
         biomes.addAll(BiomeUtils.getBiomesForTypes(BiomeDictionary.Type.SPOOKY));
         biomes.addAll(BiomeUtils.getBiomesForTypes(BiomeDictionary.Type.MAGICAL));
         
-        for (Biome biome : biomes) {
+        for (final Biome biome : biomes) {
             
             biome.getSpawnableList(EnumCreatureType.MONSTER).add(new SpawnListEntry(EntityLivingCostume.class, 5, 0, 0));
         }

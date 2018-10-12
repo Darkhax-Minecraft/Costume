@@ -10,20 +10,20 @@ public enum CostumeType {
     DEAD_GIRL("dead_girl");
     
     private final String name;
-    private Item[] costumeItems = new Item[4];
+    private final Item[] costumeItems = new Item[4];
     
     CostumeType(String name) {
         
         this.name = name;
     }
-
+    
     public Item[] getCostumeItems () {
         
-        return costumeItems;
+        return this.costumeItems;
     }
-
+    
     public String getName () {
         
-        return name;
+        return this.name;
     }
 }
