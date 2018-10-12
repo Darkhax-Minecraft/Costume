@@ -1,0 +1,13 @@
+[
+    {
+        "modid": "costume",
+        "name": "Costume",
+        "description": "Adds Costumes, and possessed costumes!",
+        "version": "${version}",
+        "url": "https://minecraft.curseforge.com/projects/costume",
+        "authorList": [
+            "Darkhax",
+			"Kiera H"
+        ]
+    }
+]

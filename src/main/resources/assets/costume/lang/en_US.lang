@@ -1,0 +1,12 @@
+#Misc
+itemGroup.costume=Costume
+entity.costume.living_costume.name=Living Costume
+
+#Items
+item.costume.costume.name=Costume
+
+#Costumes
+costume.rainbow_sheep.name=Rainbow Sheep
+costume.evil_clown.name=Evil Clown
+costume.melon.name=Crazy Melon
+costume.dead_girl.name=Dead Girl
