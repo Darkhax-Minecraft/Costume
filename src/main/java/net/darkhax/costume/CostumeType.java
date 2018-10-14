@@ -8,7 +8,9 @@ public enum CostumeType {
     EVIL_CLOWN("evil_clown"),
     RAINBOW_SHEEP("rainbow_sheep"),
     MELON("melon"),
-    DEAD_GIRL("dead_girl");
+    DEAD_GIRL("dead_girl"),
+    QUESTION("question"),
+    DEAD_ZOMBIE("dead_zombie");
     
     private final String name;
     private final Item[] costumeItems = new Item[4];
