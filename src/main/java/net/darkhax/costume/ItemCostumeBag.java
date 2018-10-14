@@ -42,15 +42,18 @@ public class ItemCostumeBag extends Item {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         
+        if (!worldIn.isRemote) {
+            
+            final CostumeType type = CostumeType.getRandom();
+            
+            for (Item item : type.getCostumeItems()) {
+                
+                ItemHandlerHelper.giveItemToPlayer(playerIn, new ItemStack(item));
+            }
+        }
+        
         final ItemStack stack = playerIn.getHeldItem(handIn);      
         stack.shrink(1);
-        
-        final CostumeType type = CostumeType.getRandom();
-        
-        for (Item item : type.getCostumeItems()) {
-            
-            ItemHandlerHelper.giveItemToPlayer(playerIn, new ItemStack(item));
-        }
         
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }
